@@ -1,329 +1,222 @@
-
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>Sannara EK</title> 
-  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous">
-
-  <!-- <meta content=“width=device-width”> -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sannara Ek</title>
+  <meta name="description" content="Sannara Ek, Postdoctoral Research Associate at the University of Cambridge: efficient and robust multimodal AI.">
   <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_package_cam/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_package_cam/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_package_cam/favicon-16x16.png">
   <link rel="manifest" href="images/favicon_package_cam/site.webmanifest">
-  <link rel="mask-icon" href="images/favicon_package_cam/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,400italic,600,700&display=swap" rel="stylesheet">
+  <style>
+    :root { --text: #1f2933; --muted: #5b6b7a; --link: #1772d0; --hover: #f09228; --rule: #e4e8ec; --tag: #eef4fb; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #fff; color: var(--text); font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
+           font-size: 18px; line-height: 1.55; }
+    a { color: var(--link); text-decoration: none; }
+    a:hover, a:focus { color: var(--hover); }
+    main { max-width: 900px; margin: 0 auto; padding: 48px 20px 32px; }
 
-  <script type="text/javascript" src="js/hidebib.js"></script>
-  <meta name="Sannara EK's Homepage" http-equiv="Content-Type" content="Sannara EK's Homepage">
-  <script src="js/scramble.js"></script>
-  <style type="text/css">
-    a {
-    color: #1772d0;
-    text-decoration:none;
-    }
-    a:focus, a:hover {
-    color: #f09228;
-    text-decoration:none;
-    }
-    html, body {
-                width: 100%;
-                height: 100%;
-                margin: 0;
-                padding: 0;
-                background-color: white;
-            }
-    body,td,th {
-      font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
-      font-size: 20px;
-      font-weight: 400
-    }
-    heading {
-      font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
-      font-size: 27px;
-      font-weight: 1000
-    }
-    strong {
-      font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
-      font-size: 24px;
-      font-weight: 800
-    }
-    strongred {
-      font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
-      color: 'red' ;
-      font-size: 24px
-    }
-    sectionheading {
-      font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
-      font-size: 30px;
-      font-weight: 600
+    header { display: flex; align-items: center; gap: 36px; margin-bottom: 8px; }
+    header img { width: 190px; height: 190px; object-fit: cover; object-position: 50% 50%; border-radius: 50%; flex-shrink: 0; }
+    h1 { font-size: 40px; font-weight: 700; margin: 0; line-height: 1.1; }
+    h1 .khmer { display: block; font-size: 22px; font-weight: 400; color: var(--muted); margin-top: 6px; }
+    .role { margin: 12px 0 14px; color: var(--muted); }
+    .links a { font-size: 26px; margin-right: 16px; }
+
+    h2 { font-size: 26px; font-weight: 600; margin: 44px 0 14px; padding-bottom: 6px; border-bottom: 1px solid var(--rule); }
+    h3 { font-size: 19px; font-weight: 600; color: var(--muted); margin: 26px 0 10px; }
+    p { margin: 0 0 12px; }
+
+    ul.news { list-style: none; padding: 0; margin: 0; }
+    ul.news li { display: grid; grid-template-columns: 110px 1fr; gap: 14px; padding: 5px 0; }
+    ul.news .date { color: var(--muted); white-space: nowrap; }
+
+    .pub { display: grid; grid-template-columns: 220px 1fr; gap: 22px; align-items: center; padding: 14px 0; }
+    .pub img { width: 100%; border-radius: 4px; border: 1px solid var(--rule); background: #fff; }
+    .pub .title { font-weight: 600; font-size: 19px; line-height: 1.35; }
+    .pub .authors, .pub .venue { font-size: 16px; }
+    .pub .venue { color: var(--muted); font-style: italic; }
+    .tag { display: inline-block; font-size: 13px; font-weight: 600; font-style: normal; color: var(--link); background: var(--tag);
+           border-radius: 10px; padding: 0 9px; margin-left: 6px; }
+    .award { color: #b07d00; font-weight: 600; font-style: normal; }
+    .pub .extra { font-size: 15px; margin-top: 3px; }
+
+    ul.plain { padding-left: 20px; margin: 0; }
+    ul.plain li { padding: 3px 0; }
+    footer { max-width: 900px; margin: 0 auto; padding: 24px 20px 40px; color: var(--muted); font-size: 14px; border-top: 1px solid var(--rule); }
+
+    @media (max-width: 680px) {
+      main { padding-top: 28px; }
+      header { flex-direction: column; text-align: center; gap: 18px; }
+      header img { width: 150px; height: 150px; }
+      .links a { margin: 0 8px; }
+      .pub { grid-template-columns: 1fr; gap: 10px; }
+      .pub img { max-width: 420px; }
+      ul.news li { grid-template-columns: 1fr; gap: 0; }
     }
   </style>
-
-  <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,600,400italic,600italic,300,300italic' rel='stylesheet' type='text/css'>
 </head>
-
 <body>
-    <table width="860" border="0" align="center" border="0" cellspacing="0" cellpadding="10">
-        <tr>
-            <td>
-                <p align="center"><font size="7">Sannara Ek - ឯក សាងណារ៉ា</font></p>
-            </td>
-        </tr>
+<main>
 
-        <tr>
-            <td width="30%" valign="bottom" align="center">
-                <a target="_blank"><img width="30%" src="images/profile2.png" "></a>
-                <ul class="network-icon" aria-hidden="true" style="text-align: center; padding-left: 5;">
-                    <a href="mailto:se521@cam.ac.uk" target="_blank" rel="noopener">
-                        <i class="fas fa-envelope fa-2x big-icon" style="padding-right:5"></i>
-                    </a>
-                    <a href="https://scholar.google.com/citations?user=P1F8sQgAAAAJ&hl=en&oi=ao" align="center" target="_blank" rel="noopener">
-                        <i class="ai ai-google-scholar ai-2x big-icon" style="padding-right:5"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/ek-sannara/" target="_blank" rel="noopener">
-                        <i class="fab fa-linkedin fa-2x big-icon" style="padding-right:5"></i>
-                    </a>
-                    <a href="https://github.com/Sannaraek" target="_blank" rel="noopener">
-                        <i class="fab fa-github fa-2x big-icon"></i>
-                    </a>
-                </ul>
-            </td>
-        </tr>
+  <header>
+    <img src="images/profile.jpg" alt="Photo of Sannara Ek">
+    <div>
+      <h1>Sannara Ek <span class="khmer">ឯក សាងណារ៉ា</span></h1>
+      <div class="role">Postdoctoral Research Associate, University of Cambridge<br>Affiliated with Trinity College</div>
+      <div class="links">
+        <a href="mailto:sannara.ek@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://scholar.google.com/citations?user=P1F8sQgAAAAJ" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+        <a href="https://github.com/Sannaraek" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/ek-sannara/" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  </header>
 
-        <tr>
-            <td width="100%" valign="bottom" align="justify">
-                <p align="left">
-                    I am a PostDoctoral Research Associate at the University of Cambridge, working with <a href="https://www.cl.cam.ac.uk/~rdm34/">Prof. Robert Mullins</a> on developing efficient edge-based vision–language models (VLMs) for applications in the Earth Observation domain. I obtained my PhD from Université Grenoble Alpes, where I was supervised by <a href="https://lig-membres.imag.fr/lalanda/">Prof. Philippe Lalanda</a> and <a href="https://scholar.google.com/citations?user=JPqdcoQAAAAJ&hl=en">Prof. François Portet</a>. My doctoral research focused on <b>Federated Learning</b> in <b>Pervasive Computing</b> environments, developing lightweight machine learning solutions resilient to data hetereogenity. I also hold a Master’s degree in Computer Vision and Robotics from Université Grenoble Alpes.
-                </p>
-                <p align="left">
-                    My research lies at the intersection of mobile and pervasive systems and the design of efficient, robust AI models. 
-                </p>
-            </td>
-        </tr>
+  <h2>About</h2>
+  <p>
+    I am a Postdoctoral Research Associate at the <a href="https://www.cst.cam.ac.uk/">University of Cambridge, Department of Computer Science and Technology</a>,
+    working with <a href="https://www.cl.cam.ac.uk/~rdm34/">Prof. Robert Mullins</a>, and affiliated with Trinity College.
+    I work on efficient and robust multimodal AI: foundation models and vision-language models that are smaller, faster and easier to trust,
+    with applications from satellite imagery to long videos.
+  </p>
+  <p>
+    I obtained my PhD from Université Grenoble Alpes, supervised by <a href="https://lig-membres.imag.fr/lalanda/">Prof. Philippe Lalanda</a>
+    and <a href="https://scholar.google.com/citations?user=JPqdcoQAAAAJ&hl=en">Prof. François Portet</a> and sponsored by Naval Group.
+    My thesis developed personalized federated learning for wearable sensing, robust to the differences between users and devices.
+    I also hold a Master's degree in AI for Vision and Robotics from Université Grenoble Alpes.
+  </p>
 
+  <h2>News</h2>
+  <ul class="news">
+    <li><span class="date">Sep 2026</span><span>Three papers accepted at <b>NeurIPS 2026</b>: SPEXT, MOSAIC and The VLM as Sensor.</span></li>
+    <li><span class="date">Jan 2026</span><span>SURGE accepted at <b>ICLR 2026</b>.</span></li>
+    <li><span class="date">2025</span><span><b>Best Paper Award</b> from CCF Transactions on Pervasive Computing and Interaction.</span></li>
+    <li><span class="date">Jul 2025</span><span>Joined the University of Cambridge, Department of Computer Science and Technology, as a Postdoctoral Research Associate.</span></li>
+    <li><span class="date">Nov 2024</span><span>Defended my PhD thesis, <a href="https://theses.hal.science/tel-05056717">Personalized Federated Learning for Sensor-based Human Activity Recognition in Pervasive Heterogeneous Environments</a>.</span></li>
+    <li><span class="date">Aug 2024</span><span>Research visit at the <a href="https://www4.comp.polyu.edu.hk/~labimcl/index.html">Internet and Mobile Computing Lab, Hong Kong Polytechnic University</a>.</span></li>
+    <li><span class="date">Oct 2022</span><span>Research visit at the <a href="https://everywarelab.di.unimi.it/">EveryWare Lab, University of Milan</a>.</span></li>
+    <li><span class="date">Nov 2021</span><span>Research visit at <a href="https://ijl.univ-lorraine.fr/en/research-groups/measurement-and-electronic-architectures-group">Institut Jean Lamour, Université de Lorraine</a>.</span></li>
+  </ul>
 
-        <tr>
-            <td width="100%" valign="top">
-                <p> <font size="7">Activities</font> </p>
-                <ul>
-                    <li>
-                        July 2025 — I have joined the <a href="https://www.cst.cam.ac.uk/"> University of Cambridge - Department of Computer Science and Technology </a> where I will be working on efficient VLM edge-systems applied to multi-spectral satellite images. 
-                    </li>
-                    <li>
-                        November 2024 — I have succesfully defended my PhD thesis titled <a href="https://www.liglb.fr/en/research-products/thesis-defence-and-hdr/sannara-ek">Personalized Federated Learning for Sensor-based Human Activity Recognition in Pervasive Heterogeneous Environments</a> in front of a jury composed of Professors <a href="https://www4.comp.polyu.edu.hk/~csjcao/">Jiannong Cao</a>, <a href="https://www.cl.cam.ac.uk/~cm542/">Cecilia Mascolo</a>, <a href="https://www-sop.inria.fr/members/Giovanni.Neglia/">Giovanni Neglia</a>, <a href="https://researchmap.jp/keiichi.yasumoto?lang=en">Keiichi Yasumoto</a>,  <a href="https://vmarangozova.github.io/">Vania Marangozova</a> and <a href="https://www.researchgate.net/profile/Jean-Michel-Tran">Jean-Michel Tran</a>.
-                    </li>
-                    <li>
-                        August 2024 — Participated in a research exchange at the <a href="https://www4.comp.polyu.edu.hk/~labimcl/index.html">Internet and Mobile Computing Laboratory (IMCL) -  Hong Kong Polytechnic University</a> to collaborate and extend my FL findings into the vision domain.
-                    </li>
-                    <li>
-                        October 2022 — Participated in a research exchange at <a href="https://everywarelab.di.unimi.it/">EveryWare Lab - University of Milan</a> to collaborate on findings regarding pre-trained and self-supervised learning models in the wearable Human Activity Recognition domain.
-                    </li>
-                    <li>
-                        November 2021 — Visited the <a href="https://ijl.univ-lorraine.fr/en/research-groups/measurement-and-electronic-architectures-group">Measurement and Electronic Architectures group - Institut Jean Lamour</a>  to investigate deep learning solutions for arc fault detection.
-                    </li>
-                </ul>
-            </td>
-        </tr>
+  <h2>Publications</h2>
+  <p style="color: var(--muted); font-size: 16px;">Full list on <a href="https://scholar.google.com/citations?user=P1F8sQgAAAAJ">Google Scholar</a>.</p>
 
-        <!-- <tr>
-            <td width="100%" valign="top">
-                <p align="left">
-                    <font size="7">Supervision</font><br>
-                    <ul>
-                        <li>
-                            June 2023 — Akram Chaouache's M1 thesis on <i>Benchmarking self-supervised learning techniques for human activity recognition on mobile devices</i>.
-                        </li>
-                    </ul>
-            </td>
-        </tr> -->
+  <h3>Recent work</h3>
 
+  <div class="pub">
+    <img src="images/spext.png" alt="SPEXT architecture">
+    <div>
+      <div class="title">SPEXT: A Decoupled Multi-Spectral Foundation Model for Earth Observation and Vision-Language Grounding</div>
+      <div class="authors"><b>Sannara Ek</b>, Chong Tang, Dirk Koch, Alex S. Weddell, Jagmohan Chauhan, Robert D. Mullins</div>
+      <div class="venue">Conference on Neural Information Processing Systems (NeurIPS) <span class="tag">NeurIPS 2026</span></div>
+    </div>
+  </div>
 
-        <table width="860" border="0" align="center" cellspacing="0" cellpadding="10">
-            <!-- ... (previous code) ... -->
+  <div class="pub">
+    <img src="images/mosaic.png" alt="MOSAIC overview">
+    <div>
+      <div class="title">MOSAIC: Concept Bottlenecks via Text-Anchored Optimal Transport</div>
+      <div class="authors"><b>Sannara Ek</b>, Chong Tang, Dirk Koch, Alex S. Weddell, Jagmohan Chauhan, Robert D. Mullins</div>
+      <div class="venue">Conference on Neural Information Processing Systems (NeurIPS) <span class="tag">NeurIPS 2026</span></div>
+    </div>
+  </div>
 
-            <tr>
-                <td width="100%" valign="top">
-                    <p> <font size="7">Journals</font> </p>
-                    <table width="860" align="center" border="0" cellspacing="0" cellpadding="20">
-                        <tr>
-                            <td width="33%" valign="middle" align="center"><a target="_blank" href="https://arxiv.org/pdf/2404.15331"><img src="images/SSL_list.png" alt="sym" width="100%" style="border-style: none"></img>
-                            <td width="67%" valign="middle">
-                                <p>
-                                    <a target="_blank" href="https://arxiv.org/pdf/2404.15331" id="SPLIT">
-                                        <!-- <img src="images/new.png" alt="[NEW]" width="6%" style="border-style: none"> -->
-                                        <strong>Comparing Self-Supervised Learning Techniques for Wearable Human Activity Recognition</strong>
-                                    </a><br>
-                                    <strong>Sannara Ek</strong>, Riccardo Presotto, Gabriele Civitarese, François Portet, Philippe Lalanda, Claudio Bettini<br>
-                                    <em>CCF Transactions on Pervasive Computing and Interaction</em>
-                                </p>
-                                <div class="paper" id="split">
-                                    <a target="_blank" href="https://arxiv.org/pdf/2404.15331">pdf</a> |
-                                    <a target="_blank" href="https://github.com/getalp/Self-Supervised-Learning-HAR">code</a>
-                                </div>
-                            </td>
-                        </tr>
+  <div class="pub">
+    <img src="images/vlm_sensor.png" alt="The VLM as Sensor overview">
+    <div>
+      <div class="title">The VLM as Sensor: Bayesian Active Search for Long Video Understanding</div>
+      <div class="authors">Chong Tang, <b>Sannara Ek</b> (corresponding author), Dirk Koch, Robert D. Mullins, Alex S. Weddell, Jagmohan Chauhan</div>
+      <div class="venue">Conference on Neural Information Processing Systems (NeurIPS) <span class="tag">NeurIPS 2026</span></div>
+    </div>
+  </div>
 
-                        
-                        <tr>
-                            <td width="33%" valign="middle" align="center"><a target="_blank" href="https://link.springer.com/article/10.1007/s00779-023-01776-3"><img src="images/attention.png" alt="sym" width="100%" style="border-style: none"></img>
-                            <td width="67%" valign="middle">
-                                <p>
-                                    <a target="_blank" href="https://link.springer.com/article/10.1007/s00779-023-01776-3" id="SPLIT">
-                                        <!-- <img src="images/new.png" alt="[NEW]" width="6%" style="border-style: none"> -->
-                                        <strong>Transformer-based models to deal with heterogeneous environments in Human Activity Recognition</strong>
-                                    </a><br>
-                                    <strong>Sannara Ek</strong>, François Portet, Philippe Lalanda<br>
-                                    <em>Personal and Ubiquitous Computing</em>
-                                </p>
-                                <div class="paper" id="split">
-                                    <a target="_blank" href="https://link.springer.com/article/10.1007/s00779-023-01776-3">pdf</a> |
-                                    <a target="_blank" href="https://github.com/getalp/Lightweight-Transformer-Models-For-HAR-on-Mobile-Devices">code</a>
-                                </div>
-                            </td>
-                        </tr>
+  <div class="pub">
+    <img src="images/surge.png" alt="SURGE pipeline">
+    <div>
+      <div class="title">SURGE: Surprise-Guided Token Reduction for Efficient Video Understanding with VLMs</div>
+      <div class="authors">Chong Tang, <b>Sannara Ek</b>, Dirk Koch, Robert D. Mullins, Alex S. Weddell, Jagmohan Chauhan</div>
+      <div class="venue">International Conference on Learning Representations (ICLR) <span class="tag">ICLR 2026</span></div>
+      <div class="extra"><a href="https://github.com/BarryTang22/SURGE">code</a></div>
+    </div>
+  </div>
 
-                        <tr>
-                            <td width="10%" valign="middle" align="center"><a target="_blank" href="https://www.sciencedirect.com/science/article/abs/pii/S1574119222001274"><img src="images/FedDist.png" alt="sym" width="100%" style="border-style: none"></img>
-                            <td width="100%" valign="middle">
-                                <p>
-                                    <a target="_blank" href="https://www.sciencedirect.com/science/article/abs/pii/S1574119222001274" id="SPLIT">
-                                        <!-- <img src="images/new.png" alt="[NEW]" width="6%" style="border-style: none"> -->
-                                        <strong>Evaluation and comparison of federated learning algorithms for Human Activity Recognition on smartphones</strong>
-                                    </a><br>
-                                    <strong>Sannara Ek</strong>, François Portet, Philippe Lalanda, German Vega<br>
-                                    <em>Pervasive and Mobile Computing</em>
-                                </p>
-                                <div class="paper" id="split">
-                                    <a target="_blank" href="https://arxiv.org/pdf/2210.16918.pdf">pdf</a> |
-                                    <a target="_blank" href="https://github.com/getalp/PerCom2021-FL">code</a>
-                                </div>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
+  <div class="pub">
+    <img src="images/fedali.png" alt="FedAli overview">
+    <div>
+      <div class="title">FedAli: Personalized Federated Learning Alignment with Prototype Layers for Generalized Mobile Services</div>
+      <div class="authors"><b>Sannara Ek</b>, Kaile Wang, François Portet, Philippe Lalanda, Jiannong Cao</div>
+      <div class="venue">arXiv preprint</div>
+      <div class="extra"><a href="https://arxiv.org/abs/2411.10595">pdf</a> | <a href="https://github.com/getalp/FedAli">code</a></div>
+    </div>
+  </div>
 
-            <tr>
-                <td width="100%" valign="top">
-                    <p> <font size="7">Proceedings</font> </p>
-                    <table width="860" align="center" border="0" cellspacing="0" cellpadding="20">
-                        <tr>
-                            <td width="33%" valign="middle" align="center"><a target="_blank" href="https://ieeexplore.ieee.org/document/10207558?denied="><img src="images/LODO.png" alt="sym" width="100%" style="border-style: none"></img>
-                            <td width="67%" valign="middle">
-                                <p>
-                                    <a target="_blank" href="https://ieeexplore.ieee.org/document/10207558?denied=" id="SPLIT">
-                                        <!-- <img src="images/new.png" alt="[NEW]" width="6%" style="border-style: none"> -->
-                                        <strong>Combining Public Human Activity Recognition Datasets TO Mitigate Labeled Data Scarcity</strong>
-                                    </a><br>
-                                    Riccardo Presotto, <strong>Sannara Ek</strong>, Gabriele Civitarese, François Portet, Philippe Lalanda, Claudio Bettini<br>
-                                    <em>2023 IEEE International Conference on Smart Computing (SMARTCOMP)</em>
-                                </p>
-                                <div class="paper" id="split">
-                                    <a target="_blank" href="https://arxiv.org/pdf/2306.13735.pdf">pdf</a> |
-                                    <a target="_blank" href="https://github.com/getalp/Lightweight-Transformer-Models-For-HAR-on-Mobile-Devices">code</a>
-                                </div>
-                            </td>
-                        </tr>
-                        <td width="33%" valign="middle" align="center"><a target="_blank" href="https://ieeexplore.ieee.org/document/9767288"><img src="images/FedIlu.png" alt="sym" width="100%" style="border-style: none"></img>
-                        <td width="67%" valign="middle">
-                            <p>
-                                <a target="_blank" href="https://www.computer.org/csdl/proceedings-article/percom/2021/09439129/1tTtypaDmmc" id="SPLIT">
-                                    <!-- <img src="images/new.png" alt="[NEW]" width="6%" style="border-style: none"> -->
-                                    <strong>Federated Learning Within Pervasive Heterogeneous Environments</strong>
-                                </a><br>
-                                <strong>Sannara Ek</strong>, François Portet, Philippe Lalanda<br>
-                                <em>2022 IEEE International Conference on Pervasive Computing and Communications Workshops and other Affiliated Events (PerCom Workshops)</em>
-                            </p>
-                            <div class="paper" id="split">
-                                <a target="_blank" href="https://ieeexplore.ieee.org/document/9767288">pdf</a>
-                            </div>
-                        </td>
-            </tr>
-            <tr>
-                <td width="33%" valign="middle" align="center"><a target="_blank" href="https://ieeexplore.ieee.org/document/9767288"><img src="images/FedAE2.png" alt="sym" width="100%" style="border-style: none"></img>
-                <td width="67%" valign="middle">
-                    <p>
-                        <a target="_blank" href="https://ieeexplore.ieee.org/abstract/document/9767369" id="SPLIT">
-                            <!-- <img src="images/new.png" alt="[NEW]" width="6%" style="border-style: none"> -->
-                            <strong>Federated Self-Supervised Learning in Heterogeneous Settings: Limits of a Baseline Approach on HAR</strong>
-                        </a><br>
-                        <strong>Sannara Ek</strong>, Romain Rombourg, François Portet, Philippe Lalanda<br>
-                        <em>2022 IEEE International Conference on Pervasive Computing and Communications Workshops and other Affiliated Events (PerCom Workshops)</em>
-                    </p>
-                    <div class="paper" id="split">
-                        <a target="_blank" href="https://ieeexplore.ieee.org/abstract/document/9767369">pdf</a>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td width="33%" valign="middle" align="center"><a target="_blank" href="https://www.computer.org/csdl/proceedings-article/percom/2021/09439129/1tTtypaDmmc"><img src="images/FedDist.png" alt="sym" width="100%" style="border-style: none"></img>
-                <td width="67%" valign="middle">
-                    <p>
-                        <a target="_blank" href="https://www.computer.org/csdl/proceedings-article/percom/2021/09439129/1tTtypaDmmc" id="SPLIT">
-                            <!-- <img src="images/new.png" alt="[NEW]" width="6%" style="border-style: none"> -->
-                            <strong>A Federated Learning Aggregation Algorithm for Pervasive Computing: Evaluation and Comparison</strong>
-                        </a><br>
-                        <strong>Sannara Ek</strong>, François Portet, Philippe Lalanda, German Vega<br>
-                        <em>2021 IEEE International Conference on Pervasive Computing and Communications (PerCom)</em>
-                    </p>
-                    <div class="paper" id="split">
-                        <a target="_blank" href="https://arxiv.org/pdf/2306.13735.pdf">pdf</a> |
-                        <a target="_blank" href="https://github.com/getalp/PerCom2021-FL">code</a>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td width="33%" valign="middle" align="center"><a target="_blank" href="https://www.computer.org/csdl/proceedings-article/percom/2021/09439129/1tTtypaDmmc"><img src="images/FL.png" alt="sym" width="100%" style="border-style: none"></img>
-                <td width="67%" valign="middle">
-                    <p>
-                        <a target="_blank" href="https://www.zurich.ibm.com/AI4IoT/pdf/4.pdf" id="SPLIT">
-                            <!-- <img src="images/new.png" alt="[NEW]" width="6%" style="border-style: none"> -->
-                            <strong>Evaluating Federated Learning for Human Activity Recognition</strong>
-                        </a><br>
-                        <strong>Sannara Ek</strong>, François Portet, Philippe Lalanda, German Vega<br>
-                        <em>2020 Workshop AI for Internet of Things, in conjunction with IJCAI-PRICAI</em>
-                    </p>
-                    <div class="paper" id="split">
-                        <a target="_blank" href="https://hal.science/hal-03102880/file/AI4IOT-updated.pdf">pdf</a>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td width="33%" valign="middle" align="center"><a target="_blank" href="https://dl.acm.org/doi/10.1145/3410530.3414321"><img src="images/fedavg_eval.png" alt="sym" width="100%" style="border-style: none"></img>
-                <td width="67%" valign="middle">
-                    <p>
-                        <a target="_blank" href="https://dl.acm.org/doi/10.1145/3410530.3414321" id="SPLIT">
-                            <!-- <img src="images/new.png" alt="[NEW]" width="6%" style="border-style: none"> -->
-                            <strong>Evaluation of federated learning aggregation algorithms: application to human activity recognition</strong>
-                        </a><br>
-                        <strong>Sannara Ek</strong>, François Portet, Philippe Lalanda, German Vega<br>
-                         <em>UbiComp/ISWC '20 Adjunct: Adjunct Proceedings of the 2020 ACM International Joint Conference on Pervasive and Ubiquitous Computing and Proceedings of the 2020 ACM International Symposium on Wearable Computers</em>
-                    </p>
-                    <div class="paper" id="split">
-                        <a target="_blank" href="https://hal.science/hal-02941944/document">pdf</a>
-                    </div>
-                </td>
-            </tr>
-        </table>
-                </td>
-            </tr>
+  <h3>Journals</h3>
 
+  <div class="pub">
+    <img src="images/SSL_list.png" alt="Self-supervised learning comparison">
+    <div>
+      <div class="title">Comparing Self-Supervised Learning Techniques for Wearable Human Activity Recognition</div>
+      <div class="authors"><b>Sannara Ek</b>, Riccardo Presotto, Gabriele Civitarese, François Portet, Philippe Lalanda, Claudio Bettini</div>
+      <div class="venue">CCF Transactions on Pervasive Computing and Interaction, 2025 <span class="award"><i class="fas fa-trophy"></i> Best Paper Award</span></div>
+      <div class="extra"><a href="https://link.springer.com/article/10.1007/s42486-024-00182-9">paper</a> | <a href="https://arxiv.org/pdf/2404.15331">pdf</a> | <a href="https://github.com/getalp/Self-Supervised-Learning-HAR">code</a></div>
+    </div>
+  </div>
 
+  <div class="pub">
+    <img src="images/attention.png" alt="Transformer models for activity recognition">
+    <div>
+      <div class="title">Transformer-based Models to Deal with Heterogeneous Environments in Human Activity Recognition</div>
+      <div class="authors"><b>Sannara Ek</b>, François Portet, Philippe Lalanda</div>
+      <div class="venue">Personal and Ubiquitous Computing, 2023</div>
+      <div class="extra"><a href="https://link.springer.com/article/10.1007/s00779-023-01776-3">paper</a> | <a href="https://github.com/getalp/Lightweight-Transformer-Models-For-HAR-on-Mobile-Devices">code</a></div>
+    </div>
+  </div>
 
-        </table>
+  <div class="pub">
+    <img src="images/FedDist.png" alt="Federated learning evaluation on smartphones">
+    <div>
+      <div class="title">Evaluation and Comparison of Federated Learning Algorithms for Human Activity Recognition on Smartphones</div>
+      <div class="authors"><b>Sannara Ek</b>, François Portet, Philippe Lalanda, German Vega</div>
+      <div class="venue">Pervasive and Mobile Computing, 2022</div>
+      <div class="extra"><a href="https://www.sciencedirect.com/science/article/abs/pii/S1574119222001274">paper</a> | <a href="https://arxiv.org/pdf/2210.16918.pdf">pdf</a> | <a href="https://github.com/getalp/PerCom2021-FL">code</a></div>
+    </div>
+  </div>
 
+  <h3>Conference and workshop papers</h3>
+  <ul class="plain">
+    <li><b>Combining Public Human Activity Recognition Datasets to Mitigate Labeled Data Scarcity.</b>
+      Riccardo Presotto, <b>Sannara Ek</b>, Gabriele Civitarese, François Portet, Philippe Lalanda, Claudio Bettini.
+      <i>IEEE SMARTCOMP 2023.</i> <a href="https://ieeexplore.ieee.org/document/10207558">paper</a> | <a href="https://arxiv.org/pdf/2306.13735.pdf">pdf</a></li>
+    <li><b>Federated Learning Within Pervasive Heterogeneous Environments.</b>
+      <b>Sannara Ek</b>, François Portet, Philippe Lalanda.
+      <i>IEEE PerCom Workshops 2022.</i> <a href="https://ieeexplore.ieee.org/document/9767288">paper</a></li>
+    <li><b>Federated Self-Supervised Learning in Heterogeneous Settings: Limits of a Baseline Approach on HAR.</b>
+      <b>Sannara Ek</b>, Romain Rombourg, François Portet, Philippe Lalanda.
+      <i>IEEE PerCom Workshops 2022.</i> <a href="https://ieeexplore.ieee.org/abstract/document/9767369">paper</a></li>
+    <li><b>A Federated Learning Aggregation Algorithm for Pervasive Computing: Evaluation and Comparison.</b>
+      <b>Sannara Ek</b>, François Portet, Philippe Lalanda, German Vega.
+      <i>IEEE PerCom 2021.</i> <a href="https://www.computer.org/csdl/proceedings-article/percom/2021/09439129/1tTtypaDmmc">paper</a> | <a href="https://github.com/getalp/PerCom2021-FL">code</a></li>
+    <li><b>Evaluating Federated Learning for Human Activity Recognition.</b>
+      <b>Sannara Ek</b>, François Portet, Philippe Lalanda, German Vega.
+      <i>AI for Internet of Things Workshop, IJCAI-PRICAI 2020.</i> <a href="https://hal.science/hal-03102880/file/AI4IOT-updated.pdf">pdf</a></li>
+    <li><b>Evaluation of Federated Learning Aggregation Algorithms: Application to Human Activity Recognition.</b>
+      <b>Sannara Ek</b>, François Portet, Philippe Lalanda, German Vega.
+      <i>UbiComp/ISWC 2020 Adjunct.</i> <a href="https://dl.acm.org/doi/10.1145/3410530.3414321">paper</a> | <a href="https://hal.science/hal-02941944/document">pdf</a></li>
+  </ul>
 
+  <h2>Service</h2>
+  <ul class="plain">
+    <li>Reviewer for NeurIPS, IEEE PerCom, ACM IMWUT, Pervasive and Mobile Computing, Knowledge-Based Systems, Frontiers in Digital Health and Frontiers in Public Health.</li>
+    <li>Supervising Master's students on health LLMs and world models; previously supervised three Master's research interns.</li>
+  </ul>
 
-    </table>
-
-<script xml:space="preserve" language="JavaScript">
-hideallbibs();
-</script>
-<script xml:space="preserve" language="JavaScript">
-hideallabs();
-</script>
+</main>
+<footer>Last updated October 2026.</footer>
 </body>
-
 </html>
